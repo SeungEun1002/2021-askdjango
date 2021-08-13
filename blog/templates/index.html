@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+        Hello {{ name }}
+        {{ mydict.subject }}
+        멘토 이름 리스트 </br>
+        <ul>
+            {% for mentor in mentor_list %}
+                {% if mentor.subject == 'math' %}
+                    <li>{{ mentor.name }}</li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </body>
+</html>
